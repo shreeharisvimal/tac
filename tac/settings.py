@@ -152,18 +152,6 @@ CORS_ALLOW_METHODS =(
 
 CORS_ORGIN_ALLOW_ALL = True
 
-CORS_ALLOWED_ORIGINS = [
-    "https://www.justbook.shreeharisvimal.tech",
-    "http://localhost:3000",
-    "https://justbook.shreeharisvimal.tech",
-]
-
-CSRF_TRUSTED_ORIGINS = [
-    "https://justbook.shreeharisvimal.tech",
-	"https://www.justbook.shreeharisvimal.tech",
-	'http://localhost:3000'
-	
-]
 
 
 
