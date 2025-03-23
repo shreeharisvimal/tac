@@ -72,6 +72,7 @@ class OrganizePatientDataView(APIView):
 
 class ProcessAudioRecordsView(APIView):
     def post(self, request):
+        
         patient_id = request.data.get('patient')
         audio_file = request.FILES.get('audio')
 
