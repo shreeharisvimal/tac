@@ -15,7 +15,6 @@ client = OpenAI( api_key = settings.OPENAI_API_KEY)
 
 class RegisterPatientView(APIView):
     def post(self, request):
-        print(request.data)
         serializer = PatientInfoSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
@@ -52,7 +51,6 @@ class StorePatientMedicalRecordsView(APIView):
 class OrganizePatientDataView(APIView):
     def post(self, request):
 
-        patient_id = request.data.get('patient_id')
         unstructured_text = request.data.get('unstructured_text')
         
         try:
